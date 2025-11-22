@@ -21,3 +21,6 @@ print("STUDENT RECORDS:")
 cursor.execute("SELECT * FROM STUDENT")
 for row in cursor.fetchall():
     print(row)
+
+connection.commit()
+connection.close()
